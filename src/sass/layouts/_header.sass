@@ -1,0 +1,57 @@
+header
+  padding:
+    top: $vertical-gutter * 1.875
+  background:
+    image: $bg-image
+  border:
+    bottom: rem-calc(3) solid $super-gray
+
+.avatar
+  padding: 0
+  +breakpoint(small only)
+    text-align: center
+
+.avatar-img
+  margin:
+    left: rem-calc(20)
+  border:
+    radius: rem-calc(140)
+
+.header-form 
+  padding: 0 rem-calc(20)
+  position: relative
+  &:after
+    content: ""
+    display: inline-block
+    width: rem-calc(184)
+    height: rem-calc(166)
+    position: absolute
+    top: rem-calc(41)
+    right: 0
+    background:
+      image: $approved-icon
+
+.input-about
+  height: $vertical-gutter * 1.5625
+  padding: 0
+  padding:
+    bottom: $vertical-gutter * 0.625
+  margin:
+    bottom: $vertical-gutter * 1.875
+  border: 0
+  border:
+    bottom: 
+      width: rem-calc(3)
+      style: solid 
+      color: $black
+  text-transform: uppercase
+  font:
+    size: rem-calc(12)
+  background:
+    color: transparent
+  color: $black
+  +placeholder
+    color: $black
+  box-shadow: none
+
+

@@ -1,0 +1,90 @@
+.footer
+  padding:
+    left: rem-calc(20)
+    top: $vertical-gutter * 3.625
+    bottom: $vertical-gutter * 4.0625
+  background:
+    image: $bg-image
+
+.skill-JS-shedule
+  padding: 0
+  +breakpoint(small only)
+    text-align: center
+
+
+.scale-image 
+  width: rem-calc(253)
+  height: $vertical-gutter * 7.9375
+  display: inline-block
+  position: relative
+  +breakpoint(small only)
+    margin:
+      bottom: $vertical-gutter
+  &:after
+    content: ""
+    display: inline-block
+    width: rem-calc(56)
+    height: $vertical-gutter * 2.4375
+    position: absolute
+    right: rem-calc(115)
+    bottom: rem-calc(-6)
+    background:
+      image: $scale-arr
+
+
+
+.skill-JS-descr
+  padding: 0
+  +breakpoint(small only)
+    text-align: center
+
+.scale-item 
+  display: inline-block
+  position: absolute
+
+
+.scale-item-left
+  width: rem-calc(84)
+  height: $vertical-gutter * 6.25
+  bottom: 0
+  left: 0
+  background:
+    image: $left-arr-scale
+
+.scale-item-right
+  width: rem-calc(82)
+  height: $vertical-gutter * 6.25
+  bottom: 0
+  right: 0
+  background:
+    image: $right-arr-scale
+
+.scale-item-middle
+  width: rem-calc(146)
+  height: $vertical-gutter * 4.125
+  top: 0
+  right: rem-calc(52)
+  background:
+    image: $middle-arr-scale
+
+.skill-JS-title
+  font:
+    size: rem-calc(18)
+  line-height: rem-calc(24)
+
+.skill-JS-level 
+  display: inline-block
+  font:
+    family: $font-family-sans-serif-black
+    size: rem-calc(50)
+  color: $button-blue
+  position: relative
+  &:after
+    content: "4"
+    position: absolute
+    opacity: 0.6
+  &:before
+    content: "3"
+    position: absolute
+    left: rem-calc(60)
+    opacity: 0.3
